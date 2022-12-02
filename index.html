@@ -1,97 +1,73 @@
 <!DOCTYPE html>
 
-
-
 <html lang="en">
-
   <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
     <title>Frontend Mentor | Tip calculator app</title>
 
-
-
     
-
 		<link rel="stylesheet" href="reset.css">
-
 		<link rel="stylesheet" href="style.css">
-
 		<link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
 
-
-
     </style>
-
   </head>
-
   
-
   <body>
+    
+    <header>
+      <div class="container">
+				<h2 class="titulo">Tip Calculator App</h2>
+			</div>
+    </header>
+    
+    <main>
 
-    <div class="value">Tip Calculator App
-
-    <br>
-
-    Bill <input id="bill" name="value" type="number" placeholder="Insert the Bill" class="medium"><br>
-
-
-
-    Select Tip % <br>
-
-    5%<input id="five percent" name="value" type="button" placeholder="5%" class="medium"> <br>
-
-    10%<input id="ten percent" name="value" type="button" placeholder="10%" class="medium"> <br>
-
-    15%<input id="fifteen percent" name="value" type="button" placeholder="15%" class="medium"> <br>
-
-    25%<input id="twenty-five percent" name="value" type="button" placeholder="25%" class="medium"> <br>
-
-    50%<input id="fifty percent" name="value" type="button" placeholder="50%" class="medium">
-
-    <br></div>
-
-    <div class="people">Custom<input id="custom" name="value" type="button" placeholder="Custom" class="medium">
-
-    <br>
-
-    Number of People<input id="Number of People" name="value" type="number" placeholder="Number of People" class="medium">
-
-    <br>
-
-    Tip Amount
-
-    / person<input id="tip amount" name="value" type="button" placeholder="Bill" class="medium">
-
-    <br>
-
-    Total
-
-    / person<input id="bill" name="value" type="button" placeholder="Bill" class="medium">
-
-    <br>
-
-    Reset<input id="reset" name="value" type="reset" placeholder="Bill" class="medium">
-
-    <br> </div>
-
-    <br>
-
-    <div class="attribution">
-
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
-
-      Coded by <a href="https://www.linkedin.com/in/tuliocanedo/">Túlio Cañedo</a>.
-
-    </div>
+      <table>
+        Bill 
+        <br>
+        <input type="number"> 
+        <br>
+        Select Tip % 
+        <br>
+        <input type="submit" value="5%">
+        <input type="submit" value="10%">
+        <input type="submit" value="15%">
+        <br>
+        <input type="submit" value="25%">
+        <input type="submit" value="50%">
+        <input type="number">
+        <br>
+        <h2>Number of People</h2> <h3>Can't be zero</h3>
+        <br>
+        <input type="number">
+      </table>
+      
+      <table>
+        Tip Amount <input type="number">
+        <br>
+        /person
+        <br>
+        Total <input type="number">
+        <br>
+        /person
+        <br>
+        <input type="submit" value="Reset">
+        <br>
+      </table>
+        
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.linkedin.com/in/tuliocanedo/">Túlio Cañedo</a>.
+      </div>
+        
+    </main>
+    
+    
+    <script> </script>
 
   </body>
-    
-    <script>
-        alert ("Calculate Tips");
-    </script>
+
 
 </html>
