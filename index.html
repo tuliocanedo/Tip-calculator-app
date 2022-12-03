@@ -27,29 +27,32 @@
       <table>
         Bill 
         <br>
-        <input type="number"> 
+        <div><input id="total-bill" type="number"></div> 
         <br>
         Select Tip % 
-        <br>
-        <input type="submit" value="5%">
-        <input type="submit" value="10%">
-        <input type="submit" value="15%">
-        <br>
-        <input type="submit" value="25%">
-        <input type="submit" value="50%">
-        <input type="number">
-        <br>
-        <h2>Number of People</h2> <h3>Can't be zero</h3>
-        <br>
-        <input type="number">
+        <div id="tip-select">  
+          <button value="0.5">5%</button>
+          
+          <input type="submit" value="10%">
+          <input type="submit" value="15%">
+          <br>
+          <input type="submit" value="25%">
+          <input type="submit" value="50%">
+          <input type="number">
+        </div>
+        <div>
+          <h2>Number of People</h2> <h3>Can't be zero</h3>
+          <input id="number-people" type="number">
+        </div>
+          
       </table>
       
-      <table>
+      <table id="calculator">
         Tip Amount <input type="number">
         <br>
         /person
         <br>
-        Total <input type="number">
+        Total <input id="total-person" type="number">
         <br>
         /person
         <br>
@@ -65,7 +68,7 @@
     </main>
     
     
-    <script> </script>
+    <script src="calculate.js"></script>
 
   </body>
 
