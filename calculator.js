@@ -1,17 +1,9 @@
-document.getElementById("total-person");
-
-document.getElementById("people");
-
-
+document.getElementById("bill");
+document.getElementById("tip");
+document.getElementById("number-people");
 
 function calculateTip (){
-
-    var totalBill = document.getElementById("total-bill").value;
-
-    var tipValue = document.getElementById("tip-select").value;
-
-    var people = document.getElementById("number-people").value;
-
-    var clear = document.getElementById("reset").value;
-
+    var totalBill = document.getElementById("bill");
+    var totalTip = document.getElementById("tip");
+    var totalPerson = document.getElementById("number-people");
 }
