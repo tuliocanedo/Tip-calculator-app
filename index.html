@@ -11,53 +11,57 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
 
-    </style>
   </head>
   
   <body>
     
     <header>
       <div class="container">
-				<h2 class="titulo">Tip Calculator App</h2>
+				<h1 class="titulo">Tip Calculator App</h1>
 			</div>
     </header>
     
     <main>
 
-      <table>
-        Bill 
-        <br>
+      
+      <div>
+        <h2>Bill</h2> 
         <div><input id="bill" type="number"></div> 
         <br>
-        Select Tip % 
-        <div id="tip">  
-          <button value="0.05">5%</button>
-          <button value="0.1">10%</button>
-          <button value="0.15">15%</button>
-          <br>
-          <button value="0.25">25%</button>
-          <button value="0.5">50%</button>
-          <input type="number">
-        </div>
-        <div>
-          <h2>Number of People</h2> <h3>Can't be zero</h3>
-          <input id="number-people" type="number">
-        </div>
-          
-      </table>
+        <h2>Select Tip %</h2>
+      </div>
+
+      <div id="tip">  
+        <button id="five" value="0.05">5%</button>
+        <button value="0.1">10%</button>
+        <button value="0.15">15%</button>
+        <br>
+        <button value="0.25">25%</button>
+        <button value="0.5">50%</button>
+        <input type="number">
+      </div>
+
+      <div>
+        <h2>Number of People</h2> <h3>Can't be zero</h3>
+        <input id="number-people" type="number">
+      </div>
+       
       
-      <table id="calculator">
-        Tip Amount <input type="number">
+      <div id="calculator">
+
+        <div id="tipAmount">
+          <h2>Tip Amount</h2>
+          <sup>R$</sup><span id="totalPerson">0.00</span>
+          <small id="each">/person</small>
+        </div>
+        
+        <h2>Total</h2><sup>$</sup><span id="totalPerson">0.00</span>
         <br>
-        /person
-        <br>
-        Total <input id="total-person" type="number">
-        <br>
-        /person
+        <small>/person</small>
         <br>
         <input type="submit" value="Reset">
         <br>
-      </table>
+      </div>
         
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -65,6 +69,7 @@
       </div>
         
     </main>
+
     
     
     <script src="calculate.js"></script>

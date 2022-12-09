@@ -1,9 +1,14 @@
-document.getElementById("bill");
-document.getElementById("tip");
-document.getElementById("number-people");
+document.getElementById("tipAmount").style.display = "none";
+document.getElementById("tip").style.display = "none";
+document.getElementById("totalPerson").style.display = "none";
 
 function calculateTip (){
-    var totalBill = document.getElementById("bill");
-    var totalTip = document.getElementById("tip");
-    var totalPerson = document.getElementById("number-people");
+    var totalTip  = document.getElementById("tipAmount").value;
+
+    document.getElementById("tipAmount").style.display = "block";
 }
+
+document.getElementById("five").onclick = function () {
+    calculateTip();
+}
+
