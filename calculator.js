@@ -16,7 +16,7 @@ function calculateDinner(){
 
     total = Math.round(total * 100) / 100;
     total = total.toFixed(2);
-    totalTipAmount = Math.round(total * 100) / 100;
+    totalTipAmount = Math.round(totalTipAmount * 100) / 100;
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
@@ -40,7 +40,7 @@ function calculateDinner2(){
 
     total = Math.round(total * 100) / 100;
     total = total.toFixed(2);
-    totalTipAmount = Math.round(total * 100) / 100;
+    totalTipAmount = Math.round(totalTipAmount * 100) / 100;
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
@@ -64,7 +64,7 @@ function calculateDinner3(){
 
     total = Math.round(total * 100) / 100;
     total = total.toFixed(2);
-    totalTipAmount = Math.round(total * 100) / 100;
+    totalTipAmount = Math.round(totalTipAmount * 100) / 100;
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
@@ -88,7 +88,7 @@ function calculateDinner4(){
 
     total = Math.round(total * 100) / 100;
     total = total.toFixed(2);
-    totalTipAmount = Math.round(total * 100) / 100;
+    totalTipAmount = Math.round(totalTipAmount * 100) / 100;
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
@@ -112,7 +112,7 @@ function calculateDinner5(){
 
     total = Math.round(total * 100) / 100;
     total = total.toFixed(2);
-    totalTipAmount = Math.round(total * 100) / 100;
+    totalTipAmount = Math.round(totalTipAmount * 100) / 100;
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
@@ -136,7 +136,7 @@ function calculateDinner6(){
 
     total = Math.round(total * 100) / 100;
     total = total.toFixed(2);
-    totalTipAmount = Math.round(total * 100) / 100;
+    totalTipAmount = Math.round(totalTipAmount * 100) / 100;
     totalTipAmount = totalTipAmount.toFixed(2);
     
     document.getElementById("calculated").style.display = "block";
