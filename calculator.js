@@ -162,6 +162,3 @@ document.getElementById("tip-amount4").onclick = function(){
 document.getElementById("tip-amount5").onclick = function(){
     calculateDinner5();
 }
-document.getElementById("tip-amount6").onclick = function(){
-    calculateDinner6();
-}
