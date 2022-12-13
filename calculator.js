@@ -1,5 +1,5 @@
 document.getElementById("calculated");
-
+const customButton= document.querySelector('#tip-amount6');
 
 function calculateDinner(){
     var totalBill = document.getElementById("total-bill").value;
@@ -121,7 +121,7 @@ function calculateDinner5(){
     
 }
 
-function calculateDinner6(){
+customButton.addEventListener("input", function(){
     var totalBill = document.getElementById("total-bill").value;
     var numberPeople = document.getElementById("number-people").value;
     var tipAmount = document.getElementById("tip-amount6").value;
@@ -134,16 +134,16 @@ function calculateDinner6(){
     var totalTipAmount = (totalBill * tipAmount) / numberPeople;
     var total = totalTipAmount + (totalBill / numberPeople);
 
-    total = Math.round(total * 100) / 100;
+    total = Math.round(total * 100) / 1000;
     total = total.toFixed(2);
-    totalTipAmount = Math.round(totalTipAmount * 100) / 100;
+    totalTipAmount = Math.round(totalTipAmount) / 100;
     totalTipAmount = totalTipAmount.toFixed(2);
     
     document.getElementById("calculated").style.display = "block";
     document.getElementById("tip-amount").innerHTML = totalTipAmount;
     document.getElementById("total-person").innerHTML = total;
     
-}
+})
 
 document.getElementById("tip-amount1").onclick = function(){
     calculateDinner();
