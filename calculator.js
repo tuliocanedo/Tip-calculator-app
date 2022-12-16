@@ -1,6 +1,13 @@
 document.getElementById("calculated");
 const customButton = document.querySelector('#tip-amount6');
-const resetButton = document.querySelector('#reset');
+const clearFields = document.querySelector('#reset');
+const tipBill = document.getElementById("total-bill");
+const numberPeople = document.getElementById("number-people");
+const resetCustom = document.getElementById("tip-amount6");
+
+var tipAmountPerPerson = document.querySelector("#tip-amount");
+var totalPerPerson = document.querySelector("#total-person");
+var customButtonReset = document.querySelector("#tip-amount6");
 
 function calculateDinner(){
     var totalBill = document.getElementById("total-bill").value;
@@ -145,6 +152,22 @@ customButton.addEventListener("input", function(){
     document.getElementById("total-person").innerHTML = total;
     
 })
+
+function resetButton (){
+    
+    var resetButton = clearFields.addEventListener('click', function(){
+        var resetTip = tipBill.value='';
+        var resetPeople = numberPeople.value='';
+        var resetCustomButton = resetCustom.value='';
+    
+        tipAmountPerPerson.innerHTML = 0;
+
+        
+        totalPerPerson.innerHTML = 0;
+        
+        customButtonReset.innerHTML = 0;
+    });
+}
 
 document.getElementById("tip-amount1").onclick = function(){
     calculateDinner();
