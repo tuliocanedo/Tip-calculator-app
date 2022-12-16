@@ -1,5 +1,6 @@
 document.getElementById("calculated");
 const customButton = document.querySelector('#tip-amount6');
+const resetButton = document.querySelector('#reset');
 
 function calculateDinner(){
     var totalBill = document.getElementById("total-bill").value;
@@ -166,5 +167,5 @@ document.getElementById("tip-amount5").onclick = function(){
 }
 
 document.getElementById("reset").onclick = function(){
-    clearResults();
+    resetButton();
 }
