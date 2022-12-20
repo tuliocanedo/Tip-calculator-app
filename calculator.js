@@ -28,8 +28,8 @@ function calculateDinner(){
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
-    document.getElementById("tip-amount").innerHTML = totalTipAmount;
-    document.getElementById("total-person").innerHTML = total;
+    document.getElementById("tip-amount").innerHTML = "$" + totalTipAmount;
+    document.getElementById("total-person").innerHTML = "$" + total;
     
 }
 
@@ -52,8 +52,8 @@ function calculateDinner2(){
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
-    document.getElementById("tip-amount").innerHTML = totalTipAmount;
-    document.getElementById("total-person").innerHTML = total;
+    document.getElementById("tip-amount").innerHTML = "$" + totalTipAmount;
+    document.getElementById("total-person").innerHTML = "$" + total;
     
 }
 
@@ -76,9 +76,8 @@ function calculateDinner3(){
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
-    document.getElementById("tip-amount").innerHTML = totalTipAmount;
-    document.getElementById("total-person").innerHTML = total;
-    
+    document.getElementById("tip-amount").innerHTML = "$" + totalTipAmount;
+    document.getElementById("total-person").innerHTML = "$" + total;
 }
 
 function calculateDinner4(){
@@ -100,8 +99,8 @@ function calculateDinner4(){
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
-    document.getElementById("tip-amount").innerHTML = totalTipAmount;
-    document.getElementById("total-person").innerHTML = total;
+    document.getElementById("tip-amount").innerHTML = "$" + totalTipAmount;
+    document.getElementById("total-person").innerHTML = "$" + total;
     
 }
 
@@ -124,8 +123,8 @@ function calculateDinner5(){
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
-    document.getElementById("tip-amount").innerHTML = totalTipAmount;
-    document.getElementById("total-person").innerHTML = total;
+    document.getElementById("tip-amount").innerHTML = "$" + totalTipAmount;
+    document.getElementById("total-person").innerHTML = "$" + total;
     
 }
 
@@ -148,8 +147,8 @@ customButton.addEventListener("input", function(){
     totalTipAmount = totalTipAmount.toFixed(2);
 
     document.getElementById("calculated").style.display = "block";
-    document.getElementById("tip-amount").innerHTML = totalTipAmount;
-    document.getElementById("total-person").innerHTML = total;
+    document.getElementById("tip-amount").innerHTML = "$" + totalTipAmount;
+    document.getElementById("total-person").innerHTML = "$" + total;
     
 })
 
@@ -160,12 +159,12 @@ function resetButton (){
         var resetPeople = numberPeople.value='';
         var resetCustomButton = resetCustom.value='';
     
-        tipAmountPerPerson.innerHTML = 0;
+        tipAmountPerPerson.innerHTML = "$" + 0 + ".00";
 
         
-        totalPerPerson.innerHTML = 0;
+        totalPerPerson.innerHTML = "$" + 0.00 + ".00";
         
-        customButtonReset.innerHTML = 0;
+        customButtonReset.innerHTML = "$" + 0.00 + ".00";
     });
 }
 
