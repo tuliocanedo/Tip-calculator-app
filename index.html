@@ -1,97 +1,72 @@
 <!DOCTYPE html>
 
-
-
 <html lang="en">
-
   <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
     <title>Frontend Mentor | Tip calculator app</title>
 
-
-
     
-
 		<link rel="stylesheet" href="reset.css">
-
 		<link rel="stylesheet" href="style.css">
-
 		<link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
 
-
-
-    </style>
-
   </head>
-
   
-
   <body>
 
-    Tip Calculator App
+    <div class="container">
 
-    <br>
+      
+      
+      <div class="left-side">
+        <div>  
 
-    Bill <input id="bill" name="value" type="number" placeholder="Insert the Bill" class="medium"><br>
+          <h2 class="bill">Bill<h2></h2>
+          <input class="input-bill" id="total-bill" type="number" placeholder="$                                          0 ">
 
+        </div>
 
+        <table>
+          
+          <h2 class="select-tip">Select Tip %<h2>
+          <div class="buttons-box">
+            <button class="tip-buttons" type="number" value="0.05" id="tip-amount1">5%</button>
+            <button class="tip-buttons" type="number" value="0.1" id="tip-amount2">10%</button>
+            <button class="tip-buttons" type="number" value="0.15" id="tip-amount3">15%</button>
+            <button class="tip-buttons" type="number" value="0.25" id="tip-amount4">25%</button>
+            <button class="tip-buttons" type="number" value="0.5" id="tip-amount5">50%</button>
+            <input class="tip-button-custom" type="number" id="tip-amount6" placeholder="Custom">
+          </div>
+        </table>
 
-    Select Tip % <br>
-
-    5%<input id="five percent" name="value" type="number" placeholder="5%" class="medium"> <br>
-
-    10%<input id="ten percent" name="value" type="number" placeholder="10%" class="medium"> <br>
-
-    15%<input id="fifteen percent" name="value" type="number" placeholder="15%" class="medium"> <br>
-
-    25%<input id="twenty-five percent" name="value" type="number" placeholder="25%" class="medium"> <br>
-
-    50%<input id="fifty percent" name="value" type="number" placeholder="50%" class="medium">
-
-    <br>
-
-    Custom<input id="custom" name="value" type="number" placeholder="Custom" class="medium">
-
-    <br>
-
-    Number of People<input id="Number of People" name="value" type="number" placeholder="Number of People" class="medium">
-
-    <br>
-
-    Tip Amount
-
-    / person<input id="tip amount" name="value" type="number" placeholder="Bill" class="medium">
-
-    <br>
-
-    Total
-
-    / person<input id="bill" name="value" type="number" placeholder="Bill" class="medium">
-
-    <br>
-
-    Reset
-
-    <br>
-
-    <br>
-
-    <div class="attribution">
-
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
-
-      Coded by <a href="https://www.linkedin.com/in/tuliocanedo/">Túlio Cañedo</a>.
+        <div>
+          <div class="number-people">
+            <h2>Number of people</h2><label class="reminder">Can't be zero</label>
+          </div>
+          <input class="input-number-people" id="number-people" type="number" placeholder="0 ">
+        </div>
+      </div>
+        
+      <div class="calculated" id="calculated">
+        
+        <div class="calculated-info">
+          <h2>Tip Amount</h2>
+          <h3>/person</h3>
+          <h3>$</h3><span id="tip-amount">0.00</span>
+          
+          <h2>Total</h2>
+          <h3>/person</h3>
+          <h3>$</h3><span id="total-person">0.00</span>
+        </div>
+        <button class="reset-button" type="reset" id="reset">RESET</button>
+      </div>
+        
+      
 
     </div>
-
   </body>
-    
-    <script>
-        alert ("Calculate Tips");
-    </script>
+
+  <script type="text/javascript" src="calculator.js"></script>
 
 </html>
