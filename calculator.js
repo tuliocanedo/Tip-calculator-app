@@ -118,7 +118,7 @@ function calculateDinner5(){
     var totalTipAmount = (totalBill * tipAmount) / numberPeople;
     var total = totalTipAmount + (totalBill / numberPeople);
 
-    total = Math.round(total * 100) / 100;
+    total = Math.round(total * 100 ) / 100;
     total = total.toFixed(2);
     totalTipAmount = Math.round(totalTipAmount * 100) / 100;
     totalTipAmount = totalTipAmount.toFixed(2);
@@ -139,14 +139,14 @@ customButton.addEventListener("input", function(){
         return;
     }
 
-    var totalTipAmount = (totalBill * tipAmount) / numberPeople;
+    var totalTipAmount = (totalBill * (tipAmount/100)) / numberPeople;
     var total = totalTipAmount + (totalBill / numberPeople);
 
-    total = Math.round(total * 100) / 1000;
+    total = Math.round(total * 100 ) / 100;
     total = total.toFixed(2);
-    totalTipAmount = Math.round(totalTipAmount) / 100;
+    totalTipAmount = Math.round(totalTipAmount * 100) / 100;
     totalTipAmount = totalTipAmount.toFixed(2);
-    
+
     document.getElementById("calculated").style.display = "block";
     document.getElementById("tip-amount").innerHTML = totalTipAmount;
     document.getElementById("total-person").innerHTML = total;

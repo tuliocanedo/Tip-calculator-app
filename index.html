@@ -14,57 +14,59 @@
   </head>
   
   <body>
-    
-    <header>
-      <div class="container">
-				<h1 class="title">Tip Calculator App</h1>
-			</div>
-    </header>
-    
-    <main>
 
-      <div class="input-bill">  
+    <div class="container">
 
-        <h2>Bill<h2>
-        <input id="total-bill" type="number" placeholder="$ 0.0">
-
-      </div>
-
-      <div class="buttons">
-        <h2>Select Tip %<h2>
-        <button type="number" value="0.05" id="tip-amount1">5%</button>
-        <button type="number" value="0.1" id="tip-amount2">10%</button>
-        <button type="number" value="0.15" id="tip-amount3">15%</button>
-        <button type="number" value="0.25" id="tip-amount4">25%</button>
-        <button type="number" value="0.5" id="tip-amount5">50%</button>
-        <input type="number" id="tip-amount6" placeholder="Custom">
-      </div>
       
-      <div class="input-number-people">
-        <h2>Number of people</h2><small>Can't be zero</small> <br>
-        <input id="number-people" type="number">
-    
-      </div>
       
-      <div id="calculated">
+      <div class="left-side">
+        <div>  
+
+          <h2 class="bill">Bill<h2></h2>
+          <input class="input-bill" id="total-bill" type="number" placeholder="$                                          0 ">
+
+        </div>
+
+        <table>
+          
+          <h2 class="select-tip">Select Tip %<h2>
+          <div class="buttons-box">
+            <button class="tip-buttons" type="number" value="0.05" id="tip-amount1">5%</button>
+            <button class="tip-buttons" type="number" value="0.1" id="tip-amount2">10%</button>
+            <button class="tip-buttons" type="number" value="0.15" id="tip-amount3">15%</button>
+            <button class="tip-buttons" type="number" value="0.25" id="tip-amount4">25%</button>
+            <button class="tip-buttons" type="number" value="0.5" id="tip-amount5">50%</button>
+            <input class="tip-button-custom" type="number" id="tip-amount6" placeholder="Custom">
+          </div>
+        </table>
+
+        <div>
+          <div class="number-people">
+            <h2>Number of people</h2><label class="reminder">Can't be zero</label>
+          </div>
+          <input class="input-number-people" id="number-people" type="number" placeholder="0 ">
+        </div>
+      </div>
         
-        <h2>Tip Amount</h2>
-        <h3>/person</h3>
-        <h3>$</h3><span id="tip-amount">0.00</span>
+      <div class="calculated" id="calculated">
         
-        <h2>Total</h2>
-        <h3>/person</h3>
-        <h3>$</h3><span id="total-person">0.00</span>
-
-        <button type="reset" id="reset">RESET</button>
+        <div class="calculated-info">
+          <h2>Tip Amount</h2>
+          <h3>/person</h3>
+          <h3>$</h3><span id="tip-amount">0.00</span>
+          
+          <h2>Total</h2>
+          <h3>/person</h3>
+          <h3>$</h3><span id="total-person">0.00</span>
+        </div>
+        <button class="reset-button" type="reset" id="reset">RESET</button>
       </div>
+        
       
-    
-  
-    </main>
 
+    </div>
   </body>
-  
+
   <script type="text/javascript" src="calculator.js"></script>
 
 </html>
