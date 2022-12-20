@@ -4,6 +4,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Tip calculator app</title>
 
     
@@ -23,7 +26,7 @@
         <div>  
 
           <h2 class="bill">Bill<h2></h2>
-          <input class="input-bill" id="total-bill" type="number" placeholder="$                                          0 ">
+          <input class="input-bill" id="total-bill" type="number" placeholder="$                                      0 ">
 
         </div>
 
@@ -51,15 +54,27 @@
       <div class="calculated" id="calculated">
         
         <div class="calculated-info">
-          <h2>Tip Amount</h2>
-          <h3>/person</h3>
-          <h3>$</h3><span id="tip-amount">0.00</span>
+
+          <div class="tip-amount">
+            
+            <p class="tip-amount-title">Tip Amount <br><span class="person">/person</span></p>
+            </span><span class="span" id="tip-amount">$0.00</span>
+
+          </div>
           
-          <h2>Total</h2>
-          <h3>/person</h3>
-          <h3>$</h3><span id="total-person">0.00</span>
+          <div class="total">
+
+            <p class="total-title">Total <br><span class="person">/person</span></p>
+            <span class="span" id="total-person">$0.00</span>
+
+          </div>
+
+          <div>
+            <br><button class="reset-button" type="reset" id="reset">RESET</button>
+          </div>
+
         </div>
-        <button class="reset-button" type="reset" id="reset">RESET</button>
+        
       </div>
         
       
