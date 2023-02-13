@@ -183,3 +183,14 @@ input[type="number"]::-webkit-inner-spin-button {
     transition:transform 0.3s;
     background-color: hsl(180, 18%, 91%);
 }
+
+@media screen and (max-width: 375px) {
+    
+    .container, .left-side, .calculated {
+        width: 375px;
+    }
+
+    #calculated {
+        width: 375px;
+    }
+}
