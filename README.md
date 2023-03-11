@@ -1,4 +1,4 @@
-# Tip-calculator-app
+# Tip Calculator App
 
 ## Table of contents
 
