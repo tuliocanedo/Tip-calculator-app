@@ -46,7 +46,7 @@ To build a Web site using HTML5, CSS3 and JavaScript.
 
 ### Built with
 
-- Semantic HTML5 markup.
+- Semantic HTML5 markup, CSS3 and JavaScript.
 
 ### What I learned
 
